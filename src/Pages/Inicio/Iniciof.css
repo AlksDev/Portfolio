@@ -1,0 +1,285 @@
+/* src\Pages\Inicio\Iniciof.css */
+.header.light {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+.header.light span {
+  letter-spacing: 20px;
+  font-size: 40px;
+}
+.header.light img {
+  width: 20%;
+  height: 100%;
+}
+.header.light button {
+  font-weight: 400;
+  height: 50px;
+}
+
+.header.light button {
+  padding: 10px 20px;
+  border-radius: 80px;
+  cursor: pointer;
+  color: white;
+  border: none;
+  background-color: #5f5f5f;
+}
+
+.header.light button:hover {
+  background-color: #74747481;
+  transition: 0.5s;
+}
+
+.header-link.light {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-link.light a {
+  text-decoration: none;
+  color: black;
+  
+}
+
+.header-link.light a:hover {
+  font-size: 18px;
+  transition: 0.5s;
+  color: #74747481;
+}
+.section.light::-webkit-scrollbar {
+  width: 8px;     /* Tamaño del scroll en vertical */
+  height: 8px;    /* Tamaño del scroll en horizontal */
+  display: none;  /* Ocultar scroll */
+  
+}
+/* parte dark */
+
+
+.header.dark {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #CACACA;
+
+}
+.header.dark span {
+  letter-spacing: 20px;
+  font-size: 40px;
+
+}
+.header.dark img {
+  width: 20%;
+  height: 100%;
+}
+.header.dark button {
+  font-weight: 400;
+  height: 50px;
+}
+
+.header.dark button {
+  padding: 10px 20px;
+  border-radius: 80px;
+  cursor: pointer;
+  color: #CACACA;
+  border: none;
+  background-color: #5f5f5f;
+}
+
+.header.dark button:hover {
+  background-color: #74747481;
+  transition: 0.5s;
+}
+.header-link.dark {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  
+}
+
+.header-link.dark a {
+  text-decoration: none;
+  color: #CACACA;
+}
+
+.header-link.dark a:hover {
+  font-size: 18px;
+  transition: 0.5s;
+  color: #74747481;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn2 {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 667px) {
+  .header.light {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: slideIn 1s ease-in-out forwards;
+  }
+
+  .header.light h1 {
+    font-size: 15px;
+  }
+  .header.light span {
+    font-size: 14px;
+    text-align: center;
+
+  }
+
+  .header.light button {
+    padding: 2px 8px;
+    border-radius: 80px;
+    font-size: 10px;
+  }
+
+  .header-link.light a {
+    text-decoration: none;
+    color: black;
+    font-size: 10px;
+  }
+
+
+  /* PARTE DARK */
+
+  .header.dark {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: slideIn 1s ease-in-out forwards;
+  }
+
+  .header.dark h1 {
+    font-size: 15px;
+  }
+  .header.dark span {
+    font-size: 14px;
+    text-align: center;
+
+  }
+
+  .header.dark button {
+    padding: 2px 8px;
+    border-radius: 80px;
+    font-size: 10px;
+  }
+
+  .header-link.dark a {
+    text-decoration: none;
+    color: #CACACA;
+  
+    font-size: 10px;
+  }
+
+  @keyframes slideIn {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
+
+@media screen and (min-width: 668px) and (max-width: 950px) {
+  .header.light h1 {
+    font-size: 16px;
+  }
+  .header.light span {
+    font-size: 17px;
+    text-align: center;
+  }
+  .header.light button {
+    padding: 4px 12px;
+    border-radius: 80px;
+    font-size: 12px;
+  }
+  
+  .header-link.light a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+  }
+
+  .header.dark h1 {
+    font-size: 16px;
+  }
+  .header.dark span {
+    font-size: 17px;
+    text-align: center;
+  }
+  .header.dark button {
+    padding: 4px 12px;
+    border-radius: 80px;
+    font-size: 12px;
+  }
+  
+  .header-link.light a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 951px) and (max-width: 1000px) {
+  .header.light h1 {
+    font-size: 18px;
+  }
+  .header.light span {
+    font-size: 19px;
+    text-align: center;
+  }
+  .header.light button {
+    padding: 8px 8px;
+    border-radius: 80px;
+  }
+
+  .header.dark h1 {
+    font-size: 18px;
+  }
+  .header.dark span {
+    font-size: 19px;
+    text-align: center;
+  }
+  .header.dark button {
+    padding: 8px 8px;
+    border-radius: 80px;
+  }
+
+
+  
+}

@@ -1,0 +1,241 @@
+/* Navbar.css */
+.logo {
+  width: 100px;
+  cursor: pointer;
+  align-content: center;
+  margin-top: 5px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  transform: translateX(50px);
+}
+
+/* Navbar.css */
+.nav.light {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  color: #262626;
+  background-color: #cacaca;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  transition: background-color 0.5s ease;
+  z-index: 2; /* Asegura que la barra de navegación esté por encima del contenido */
+  white-space: nowrap;
+}
+
+.nav.dark {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  color: white;
+  background-color: #262626;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  transition: background-color 0.5s ease;
+  z-index: 2; /* Asegura que la barra de navegación esté por encima del contenido */
+  white-space: nowrap;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.scrolled.light {
+  background-color: #cacaca9f;
+  z-index: 1;
+}
+
+.scrolled.dark {
+  background-color: #5f5f5f23;
+  z-index: 1;
+}
+
+.ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  /* background-color: #CACACA; */
+}
+
+.ul li {
+  list-style: none;
+}
+
+.ul li a {
+  position: relative;
+  display: block;
+  text-transform: uppercase;
+  margin: 20px 0;
+  padding: 10px 20px; /* Tamaño de padding por defecto */
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 14px; /* Tamaño de fuente por defecto */
+  font-weight: 600;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.ul li a:hover {
+  color: #262626;
+  transition: 1s;
+}
+
+.menu-icon {
+  margin: 20px auto;
+  width: 20px;
+  height: 14px;
+  cursor: pointer;
+  position: relative;
+  display: none;
+  left: 100px;
+}
+
+.menu-icon.light span {
+  background-color: rgb(253, 253, 253);
+  height: 2px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+}
+
+.menu-icon.dark span {
+  background-color: #cacaca;
+  height: 2px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+}
+
+.menu-icon span:first-child {
+  top: 0;
+}
+
+.menu-icon span:nth-child(2) {
+  top: 6px;
+}
+
+.menu-icon span:last-child {
+  top: 12px;
+}
+
+.menu-icon:hover span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-icon.dark:hover span:first-child,
+.menu-icon.dark:hover span:last-child {
+  top: 6px;
+  background-color: #cacaca;
+}
+
+.menu-icon.dark:hover span:first-child {
+  transform: rotate(45deg);
+}
+
+.menu-icon.dark:hover span:last-child {
+  transform: rotate(-45deg);
+}
+
+.menu-icon.light:hover span:first-child,
+.menu-icon.light:hover span:last-child {
+  top: 6px;
+  background-color: #ffffff;
+}
+
+.menu-icon.light:hover span:first-child {
+  transform: rotate(45deg);
+}
+
+.menu-icon.light:hover span:last-child {
+  transform: rotate(-45deg);
+}
+
+/* Media query para mostrar el menú hamburguesa en pantallas más pequeñas */
+@media screen and (max-width: 900px) {
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: -5px; 
+    left: 90%;
+  }
+
+  .ul {
+    position: absolute;
+    top: 300px; 
+    left: 80%;
+    width: 20%;
+    padding: 80px;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: center;
+    display: none;
+    transform: translate(0px 900px);
+  }
+
+  .ul.open {
+    display: flex;
+  }
+
+  .ul.open.light {
+    background-color: #cacaca;
+  }
+
+  .ul.open.dark {
+    background-color: #262626;
+  }
+
+  .ul li {
+    margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 667px) {
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: -5px; 
+    left: 85%;
+  }
+
+  .ul {
+    left: 71%;
+    width: 20%;
+    padding: 80px;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: center;
+    display: none;
+  }
+
+  .ul.open {
+    display: flex;
+  }
+
+  .ul.open.light {
+    background-color: #cacaca9c;
+  }
+
+  .ul.open.dark {
+    background-color: #262626;
+  }
+
+  .ul li {
+    margin: 10px 0;
+  }
+}

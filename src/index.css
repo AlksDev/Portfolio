@@ -1,0 +1,53 @@
+/* index.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Teachers:ital,wght@0,400..800;1,400..800&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap');
+*{
+  margin: 0;
+  font-family: "Ubuntu Sans Mono", monospace;
+;
+
+}
+.app-container.light {
+  background-image: url(./assets/bbblurry.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.app-container.dark {
+   background-image: url(./assets/bbblurry.svg); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #262626;
+}
+
+.App{
+  display: flex;
+  gap: 20px;
+}
+
+.section-2{
+  margin-top: 55px;
+}
+
+@media screen and (max-width: 1210px) {
+  .app-container.light {
+
+  }
+
+}
+
+@media screen and (max-width: 667px) {
+  .app-container.light {
+   
+  }
+  
+  .app-container.dark {
+
+  }
+}
+  
+
+
