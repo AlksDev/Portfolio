@@ -87,11 +87,15 @@
   z-index: 1;
 }
 
-.ul li a:hover {
+.link.light:hover {
   color: #262626;
   transition: 1s;
 }
 
+.link.dark:hover{
+  color: #74747481;
+  transition: 1s;
+}
 .menu-icon {
   margin: 20px auto;
   width: 20px;

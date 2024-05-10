@@ -3,9 +3,9 @@ import { useThemeContext } from "../../Context/ThemeContext";
 import { useLanguageContext } from "../../Context/LanguageContext";
 import ImagePerfil from "../../assets/perfil.png";
 import "./Iniciof.css";
-import ImageP from "./images/git.gif";
 import Typewriter from "typewriter-effect";
 import BotonContacto from "../../Components/BotonContacto/BotonContacto";
+import ConoceMas from "../../Components/ConoceMas/ConoceMas";
 function Inicio() {
   const { theme } = useThemeContext();
   const { language } = useLanguageContext();
@@ -55,7 +55,6 @@ function Inicio() {
             />
           </span>
         )}
-        <BotonContacto />
         <div className={`header-link ${theme}`}>
           <button>
             {language === "es" ? "Ir al portafolio" : "Go to portfolio"}
@@ -65,10 +64,13 @@ function Inicio() {
           </a>
         </div>
       </header>
+      <div className="boton-contacto-inicio">
+
+      <BotonContacto />
+      </div>
       <section className={`section ${theme}`} id="inicio">
-        <div>
-          <img src={ImageP} alt="" />
-          
+        <div> 
+          <ConoceMas />  
         </div>
       </section>
       <section href="contacto">

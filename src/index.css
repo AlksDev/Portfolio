@@ -8,19 +8,22 @@
 
 }
 .app-container.light {
-  background-image: url(./assets/bbblurry.svg);
+  /* background-image: url(./assets/bbblurry.svg); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-image: none;
 }
 
 
 .app-container.dark {
-   background-image: url(./assets/bbblurry.svg); 
+   /* background-image: url(./assets/bbblurry.svg); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-color: #262626;
+  background-image: none;
+
 }
 
 .App{
@@ -41,13 +44,13 @@
 
 @media screen and (max-width: 667px) {
   .app-container.light {
-   
+
   }
-  
+
   .app-container.dark {
 
   }
 }
-  
+
 
 
