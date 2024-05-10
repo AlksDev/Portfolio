@@ -26,9 +26,9 @@ function BotonColor() {
           className={`theme-button ${theme === "light" ? "light" : "dark"}`}
         >
           {theme === "light" ? (
-            <MdDarkMode size={20} />
+            <MdDarkMode size={30} />
           ) : (
-            <MdOutlineDarkMode size={20} />
+            <MdOutlineDarkMode size={30} />
           )}
         </span>
         <span
@@ -36,9 +36,9 @@ function BotonColor() {
           className={`theme-button ${theme === "light" ? "light" : "dark"}`}
         >
           {theme === "light" ? (
-           <IoLanguageSharp size={20}/>
+           <IoLanguageSharp size={30}/>
           ) : (
-          <IoLanguageSharp size={20}/>
+          <IoLanguageSharp size={30}/>
 
           )}
         </span>

@@ -1,15 +1,19 @@
 /* src\Pages\Inicio\Iniciof.css */
 .header.light {
+
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   animation: slideIn2 1s ease-in-out forwards;
+
 }
 .header.light span {
   letter-spacing: 20px;
   font-size: 40px;
+  text-align: center;
+
 }
 .header.light img {
   width: 20%;
@@ -75,6 +79,8 @@
 .header.dark span {
   letter-spacing: 20px;
   font-size: 40px;
+  text-align: center;
+
 
 }
 .header.dark img {
@@ -181,7 +187,6 @@
 
 
   /* PARTE DARK */
-
   .header.dark {
     display: flex;
     flex-direction: column;
@@ -193,6 +198,7 @@
 
   .header.dark h1 {
     font-size: 15px;
+    
   }
   .header.dark span {
     font-size: 14px;
@@ -206,17 +212,20 @@
     font-size: 10px;
   }
 
-  .header-link.dark a {
+  .header-dark.light a {
     text-decoration: none;
-    color: #CACACA;
+    color: black;
     font-size: 10px;
   }
+
 
   .header.dark img {
     width: 50%;
     height: 100%;
   }
 
+  
+  
 
 
   @keyframes slideIn {
@@ -292,6 +301,7 @@
 @media screen and (min-width: 951px) and (max-width: 1000px) {
   .header.light h1 {
     font-size: 18px;
+    
   }
   .header.light span {
     font-size: 19px;
@@ -325,4 +335,6 @@
     height: 100%;
   }
 }
+
+
 

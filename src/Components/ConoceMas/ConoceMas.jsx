@@ -11,14 +11,24 @@ import ScrollAnimation from "react-animate-on-scroll";
 function ConoceMas() {
   const { theme } = useThemeContext();
   const { language } = useLanguageContext();
-  const intereses = ["Desarrollo Web", "Inteligencia artificial IA","Diseño de productos y servicio", "Desarrollo de software"];
-const interest =["Web development", "Artificial intelligence IA","Product and service design", "Software development"];
+  const intereses = [
+    "Desarrollo Web",
+    "Inteligencia artificial IA",
+    "Diseño de productos y servicio",
+    "Desarrollo de software",
+  ];
+  const interest = [
+    "Web development",
+    "Artificial intelligence IA",
+    "Product and service design",
+    "Software development",
+  ];
   return (
-    <ScrollAnimation
-      animateIn="slideInLeft"
-      animateOut="fadeOut"
-      style={{ marginLeft: "150px", marginRight: "150px" }}
-    >
+    // <ScrollAnimation
+    //   animateIn="slideInLeft"
+    //   animateOut="slideOutLeft"
+    //   style={{ marginLeft: "150px", marginRight: "150px" }}
+    // >
       <div className={`card ${theme}`}>
         <div className={`conoce-title-left ${theme}`}>
           <div className={`conoce-title ${theme}`}>
@@ -40,7 +50,6 @@ const interest =["Web development", "Artificial intelligence IA","Product and se
                 the project, from its conception to its implementation.
               </span>
             )}
-            {/* <img src={Conocemas} alt="" srcset="" /> */}
           </div>
         </div>
         <hr className={`hr1 ${theme}`} />
@@ -51,23 +60,22 @@ const interest =["Web development", "Artificial intelligence IA","Product and se
           </div>
           <div className={`description-conoce ${theme}`}>
             {language === "es" ? (
-                <ul>
-                  {intereses.map((interes,index) => (
-                    <li key={index}>{interes}</li>
-                  ))}
-                  
-                </ul>)
-                : (
-                  <ul>
-                    {interest.map((interes,index) => (
-                      <li key={index}>{interes}</li>
-                    ))}
-                    </ul>
-                )}
+              <ul>
+                {intereses.map((interes, index) => (
+                  <li key={index}>{interes}</li>
+                ))}
+              </ul>
+            ) : (
+              <ul>
+                {interest.map((interes, index) => (
+                  <li key={index}>{interes}</li>
+                ))}
+              </ul>
+            )}
           </div>
         </div>
       </div>
-    </ScrollAnimation>
+    // </ScrollAnimation>
   );
 }
 

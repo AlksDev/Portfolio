@@ -6,6 +6,7 @@ import "./Iniciof.css";
 import Typewriter from "typewriter-effect";
 import BotonContacto from "../../Components/BotonContacto/BotonContacto";
 import ConoceMas from "../../Components/ConoceMas/ConoceMas";
+import Aptitudes from "../../Components/Aptitudes/Aptitudes";
 function Inicio() {
   const { theme } = useThemeContext();
   const { language } = useLanguageContext();
@@ -72,11 +73,11 @@ function Inicio() {
         <div> 
           <ConoceMas />  
         </div>
+        <div>
+          <Aptitudes/>
+        </div>
       </section>
-      <section href="contacto">
-        <h1>{language === "es" ? "Contactame" : "Contact me"}</h1>
-        
-      </section>
+
     </div>
   );
 }

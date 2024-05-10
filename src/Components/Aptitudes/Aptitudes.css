@@ -1,0 +1,515 @@
+.Aptitudes.light {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+    gap: 50px;
+}
+  
+  .Aptitudes-left.light {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  
+  .Aptitudes.light ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .Aptitudes.light li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-start;
+  }
+  
+  .Aptitudes-right.light{
+    margin-top: -50px;
+}
+  .content.light {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .content-description.light {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .container.light .skill.light .progress.light {
+    position: relative;
+    height: 6px;
+    background-color: #b4adad;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 5px 0;
+    border: 2px solid rgb(5, 5, 5);
+    width: 100%;
+  }
+  
+  .container.light .skill.light .progress.light::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: var(--width);
+    background-color: #0f0f0f;
+  }
+  
+/* dark */
+.Aptitudes.dark {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+    margin-left: -70px;
+    gap: 50px;
+}
+  
+.Aptitudes-left.dark {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+  
+.Aptitudes.dark ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #cacaca; /* Color de texto igual al de light */
+}
+  
+.Aptitudes.dark li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.Aptitudes-right.dark{
+    margin-top: -50px;
+}
+.content.dark {
+    display: flex;
+    gap: 20px;
+}
+  
+.content-description.dark {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+  
+.container.dark .skill.dark .progress.dark {
+    position: relative;
+    height: 6px;
+    background-color: #00000031; /* Color de fondo igual al de light */
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 5px 0;
+    border: 2px solid rgb(5, 5, 5);
+    width: 100%;
+}
+  
+.container.dark .skill.dark .progress.dark::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: var(--width);
+    background-color: #cacaca; /* Color de progreso igual al de light */
+}
+
+@media screen and (max-width: 667px) {
+    .Aptitudes.light {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 90px;
+        gap: 50px;
+        margin-left: 5px;
+    }
+      
+      .Aptitudes-left.light {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+      
+      .Aptitudes.light ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      
+      .Aptitudes.light li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: flex-start;
+      }
+      
+    
+      .content.light {
+        display: flex;
+        gap: 20px;
+      }
+      
+      .content-description.light {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+      
+      .container.light .skill.light .progress.light {
+        position: relative;
+        height: 6px;
+        background-color: #cacaca;
+        border-radius: 8px;
+        overflow: hidden;
+        margin: 5px 0;
+        border: 2px solid rgb(5, 5, 5);
+        width: 100%;
+      }
+      
+      .container.light .skill.light .progress.light::before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: var(--width);
+        background-color: #585858;
+      }
+      
+    /* dark */
+    .Aptitudes.dark {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 90px;
+        gap: 50px;
+    }
+      
+    .Aptitudes-left.dark {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+      
+    .Aptitudes.dark ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        color: #cacaca; /* Color de texto igual al de light */
+    }
+      
+    .Aptitudes.dark li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: flex-start;
+    }
+    
+    .content.dark {
+        display: flex;
+        gap: 20px;
+    }
+      
+    .content-description.dark {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+      
+    .container.dark .skill.dark .progress.dark {
+        position: relative;
+        height: 6px;
+        background-color: #b4adad; /* Color de fondo igual al de light */
+        border-radius: 8px;
+        overflow: hidden;
+        margin: 5px 0;
+        border: 2px solid rgb(5, 5, 5);
+        width: 100%;
+    }
+      
+    .container.dark .skill.dark .progress.dark::before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: var(--width);
+        background-color: #0f0f0f; /* Color de progreso igual al de light */
+    }
+    
+}
+
+@media screen and (min-width: 668px) and (max-width: 950px) {
+    .Aptitudes.light {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 90px;
+        transform: translateX(70px);
+        gap: 50px;
+        width: 100%;
+
+    }
+      
+      .Aptitudes-left.light {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+      
+      .Aptitudes.light ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      
+      .Aptitudes.light li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: flex-start;
+      }
+      
+      .Aptitudes-right.light{
+        margin-top: -50px;
+    }
+      .content.light {
+        display: flex;
+        gap: 20px;
+      }
+      
+      .content-description.light {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+      
+      .container.light .skill.light .progress.light {
+        position: relative;
+        height: 6px;
+        background-color: #b4adad;
+        border-radius: 8px;
+        overflow: hidden;
+        margin: 5px 0;
+        border: 2px solid rgb(5, 5, 5);
+        width: 100%;
+      }
+      
+      .container.light .skill.light .progress.light::before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: var(--width);
+        background-color: #0f0f0f;
+      }
+      
+    /* dark */
+    .Aptitudes.dark {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 90px;
+        margin-left: -70px;
+        gap: 50px;
+    }
+      
+    .Aptitudes-left.dark {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+      
+    .Aptitudes.dark ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        color: #cacaca; /* Color de texto igual al de light */
+    }
+      
+    .Aptitudes.dark li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: flex-start;
+    }
+    
+    .Aptitudes-right.dark{
+        margin-top: -50px;
+    }
+    .content.dark {
+        display: flex;
+        gap: 20px;
+    }
+      
+    .content-description.dark {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+      
+    .container.dark .skill.dark .progress.dark {
+        position: relative;
+        height: 6px;
+        background-color: #00000031; /* Color de fondo igual al de light */
+        border-radius: 8px;
+        overflow: hidden;
+        margin: 5px 0;
+        border: 2px solid rgb(5, 5, 5);
+        width: 100%;
+    }
+      
+    .container.dark .skill.dark .progress.dark::before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: var(--width);
+        background-color: #cacaca; /* Color de progreso igual al de light */
+    }
+}
+
+@media screen and (min-width: 951px) and (max-width: 1024px) {
+    .Aptitudes.light {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 90px;
+        margin-left: 0px;
+        gap: 50px;
+    }
+      
+      .Aptitudes-left.light {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+      }
+      
+      .Aptitudes.light ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      
+      .Aptitudes.light li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: flex-start;
+      }
+      
+      .Aptitudes-right.light{
+        margin-top: -50px;
+    }
+      .content.light {
+        display: flex;
+        gap: 20px;
+      }
+      
+      .content-description.light {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+      
+      .container.light .skill.light .progress.light {
+        position: relative;
+        height: 6px;
+        background-color: #b4adad;
+        border-radius: 8px;
+        overflow: hidden;
+        margin: 5px 0;
+        border: 2px solid rgb(5, 5, 5);
+        width: 100%;
+      }
+      
+      .container.light .skill.light .progress.light::before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: var(--width);
+        background-color: #0f0f0f;
+      }
+      
+    /* dark */
+    .Aptitudes.dark {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 90px;
+        margin-left: -70px;
+        gap: 50px;
+    }
+      
+    .Aptitudes-left.dark {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+      
+    .Aptitudes.dark ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        color: #cacaca; /* Color de texto igual al de light */
+    }
+      
+    .Aptitudes.dark li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: flex-start;
+    }
+    
+    .Aptitudes-right.dark{
+        margin-top: -50px;
+    }
+    .content.dark {
+        display: flex;
+        gap: 20px;
+    }
+      
+    .content-description.dark {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+      
+    .container.dark .skill.dark .progress.dark {
+        position: relative;
+        height: 6px;
+        background-color: #00000031; /* Color de fondo igual al de light */
+        border-radius: 8px;
+        overflow: hidden;
+        margin: 5px 0;
+        border: 2px solid rgb(5, 5, 5);
+        width: 100%;
+    }
+}
