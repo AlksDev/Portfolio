@@ -1,0 +1,29 @@
+/* Estilos comunes para el botón en ambos temas */
+.button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    border-radius: 5px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  /* Tema claro */
+  .light .button {
+    color: #000000; /* Color del icono en tema claro */
+  }
+  
+  .light .button:hover {
+    color: #464646; /* Color cuando se pasa el mouse en tema claro */
+  }
+  
+  /* Tema oscuro */
+  .dark .button {
+    color: #ffffff; /* Color del icono en tema oscuro */
+  }
+  
+  .dark .button:hover {
+    color:#ffff00; /* Color cuando se pasa el mouse en tema oscuro */
+  }
+  

@@ -1,0 +1,123 @@
+/* Estilos generales para la navbar */
+.navbar-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    position: relative; /* Necesario para posicionar el menú */
+}
+
+.navbar-right-items {
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Estilos para los temas (light y dark) */
+.light .navbar-right-items {
+    color: #000000; /* Texto oscuro en modo claro */
+}
+
+.light .navbar-right-items:hover {
+    color: yellow; /* Color de texto en hover para modo claro */
+}
+
+.dark .navbar-right-items {
+    color: #ffffff; /* Texto claro en modo oscuro */
+}
+
+.dark .navbar-right-items:hover {
+    color: #313131; /* Color de texto en hover para modo oscuro */
+}
+
+/* Logo */
+.Logo img {
+    width: 100px;
+    height: 100px;
+}
+
+/* Menú hamburguesa */
+.menu-toggle {
+    display: none; /* Escondemos el checkbox */
+}
+
+.menu-button-container {
+    display: none; /* Escondemos el ícono de hamburguesa por defecto */
+    cursor: pointer;
+}
+
+.menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Cambiar el ícono cuando el menú está abierto */
+.menu-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hamburger {
+    display: block; /* Mostrar el ícono hamburguesa */
+}
+
+.cancel {
+    display: none; /* Ocultar la X por defecto */
+}
+
+/* Media Query para pantallas pequeñas (móviles pequeños, menos de 600px) */
+@media only screen and (max-width: 600px) {
+    /* Mostrar el ícono hamburguesa en pantallas pequeñas */
+    .menu-button-container {
+        display: block;
+    }
+
+    /* Ocultar los enlaces de la navbar por defecto */
+    .navbar-links {
+        display: none;
+        width: 100%;
+        flex-direction: column; /* Cambiar a columna */
+        position: absolute;
+        top: 80px; /* Ajustar según la altura del navbar */
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        border-radius: 5px;
+        padding: 10px 0;
+    }
+
+    /* Mostrar el menú cuando el checkbox esté seleccionado */
+    .menu-toggle:checked + .menu-button-container + .navbar-links {
+        display: flex;
+    }
+
+    /* Asegurarse de que los enlaces tengan un diseño adecuado */
+    .navbar-right-items {
+        color: white;
+        padding: 1rem;
+        width: 100%;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+  
+    /* Mostrar la X cuando el checkbox esté marcado */
+    .menu-toggle:checked + .menu-button-container .menu-icon .hamburger {
+        display: none; /* Ocultar el ícono hamburguesa */
+    }
+
+    .menu-toggle:checked + .menu-button-container .menu-icon .cancel {
+        display: block; /* Mostrar la X */
+    }
+}

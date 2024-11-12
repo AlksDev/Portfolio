@@ -1,0 +1,9 @@
+#tsparticles {
+  position: fixed; /* Fijar las partículas en toda la pantalla */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Asegurar que las partículas estén detrás de otros elementos */
+  transition: background-color 1s ease-in-out; /* Transición suave en el cambio de fondo */
+}

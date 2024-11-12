@@ -1,0 +1,78 @@
+@media only screen and (max-width: 399px) {
+    body {
+      padding: 0.5rem; /* Ajusta el padding */
+    }
+    /* Tema claro */
+  .light {
+    background-color: white;
+    color: #000000;
+  }
+  
+  /* Tema oscuro */
+  .dark {
+    background-color: black;
+    color: #ffffff;
+  }
+  
+  }
+  
+  /* Media Query para pantallas pequeñas (dispositivos entre 400px y 768px de ancho) */
+  @media only screen and (min-width: 400px) and (max-width: 768px) {
+    body {
+      padding: 1rem; /* Ajusta el padding según el tamaño de pantalla */
+    }
+    .light {
+      background-color: white;
+      color: #000000;
+    }
+    
+    /* Tema oscuro */
+    .dark {
+      background-color: black;
+      color: #ffffff;
+    }
+  }
+  
+  /* Media Query para pantallas medianas (tablets entre 768px y 1024px de ancho) */
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+      padding: 1.5rem; /* Ajusta el padding */
+    }
+  }
+  
+  /* Media Query para pantallas grandes (laptops o dispositivos entre 1025px y 1365px de ancho) */
+  @media only screen and (min-width: 1025px) and (max-width: 1365px) {
+    .Inicio {
+      margin: 0 30px;
+  
+    }
+  }
+  
+  /* Media Query para pantallas de 13 pulgadas (1366px de ancho, típicamente laptops de 13") */
+  @media only screen and (min-width: 1366px) and (max-width: 1600px) {
+    body {
+      padding: 3rem; /* Ajusta el padding para pantallas de 13" */
+  
+    }
+  }
+  
+  /* Media Query para pantallas Full HD (1920px de ancho, típicamente pantallas grandes o laptops de gama alta) */
+  @media only screen and (min-width: 1600px) {
+    body {
+      padding: 4rem; /* Ajusta el padding para pantallas grandes */
+      margin: 0 100px;
+  
+  
+    }
+
+  }
+  
+  /* Media Query para pantallas más grandes (por ejemplo, pantallas externas, monitores grandes) */
+  @media only screen and (min-width: 2560px) {
+    body {
+      padding: 5rem; /* Ajusta el padding para pantallas más grandes */
+  
+    }
+    /* Otros estilos para pantallas más grandes */
+  }
+  
