@@ -52,13 +52,13 @@ function Hability({ toggleLanguage, language, theme }) {
       <h1 className="hability-title">
         {language === 'es' ? "Mis habilidades" : "My Skills"}
       </h1>
-      <h2>{language === 'es' ? "Lenguajes de programación" : "Programming languages"}</h2>
+      <h2 className='hability-subtitle'>{language === 'es' ? "Lenguajes de programación" : "Programming languages"}</h2>
       <Carousel
         showArrows={true}
         onChange={onChange}
         onClickItem={onClickItem}
         onClickThumb={onClickThumb}
-        autoPlay={false}
+        autoPlay={true}
         infiniteLoop={true}
         showStatus={false}
         emulateTouch={true}
@@ -72,13 +72,13 @@ function Hability({ toggleLanguage, language, theme }) {
         {Languages.map((language, index) => (
           <div key={index}>
             {language.icon}
-            <h3>{language.name}</h3>
+            <h3 className='hability-name'>{language.name}</h3>
           </div>
         ))}
       </Carousel>
 
       <hr className={`line-hability ${theme}`} />
-      <h2>{language === 'es' ? "Base de datos" : "Database"}</h2>
+      <h2 className='hability-subtitle'>{language === 'es' ? "Base de datos" : "Database"}</h2>
       <Carousel
         showArrows={false}
         onChange={onChange}
@@ -98,19 +98,19 @@ function Hability({ toggleLanguage, language, theme }) {
         {DataBase.map((database, index) => (
           <div key={index}>
             {database.icon}
-            <h3>{database.name}</h3>
+            <h3 className='hability-name'>{database.name}</h3>
           </div>
         ))}
       </Carousel>
 
       <hr className={`line-hability ${theme}`} />
-      <h2>{language === 'es' ? "ORM, Frameworks, Plataformas & Librerias" : "ORM, Frameworks, Platforms & Libraries"}</h2>
+      <h2 className='hability-subtitle'>{language === 'es' ? "ORM, Frameworks, Plataformas & Librerias" : "ORM, Frameworks, Platforms & Libraries"}</h2>
       <Carousel
         showArrows={false}
         onChange={onChange}
         onClickItem={onClickItem}
         onClickThumb={onClickThumb}
-        autoPlay={false}
+        autoPlay={true}
         infiniteLoop={true}
         showStatus={false}
         emulateTouch={true}
@@ -124,19 +124,19 @@ function Hability({ toggleLanguage, language, theme }) {
         {Frameworks.map((framework, index) => (
           <div key={index}>
             {framework.icon}
-            <h3>{framework.name}</h3>
+            <h3 className='hability-name'>{framework.name}</h3>
           </div>
         ))}
       </Carousel>
 
       <hr className={`line-hability ${theme}`} />
-      <h2>{language === 'es' ? "IDEs, Editor de código & Herramientas de desarrollo" : "IDEs, Code Editor & Development Tools"}</h2>
+      <h2 className='hability-subtitle'>{language === 'es' ? "IDEs, Editor de código & Herramientas de desarrollo" : "IDEs, Code Editor & Development Tools"}</h2>
       <Carousel
         showArrows={true}
         onChange={onChange}
         onClickItem={onClickItem}
         onClickThumb={onClickThumb}
-        autoPlay={false}
+        autoPlay={true}
         infiniteLoop={true}
         showStatus={false}
         emulateTouch={true}
@@ -150,7 +150,7 @@ function Hability({ toggleLanguage, language, theme }) {
         {Tools.map((tools, index) => (
           <div key={index}>
             {tools.icon}
-            <h3>{tools.name}</h3>
+            <h3 className='hability-name'>{tools.name}</h3>
           </div>
         ))}
       </Carousel>

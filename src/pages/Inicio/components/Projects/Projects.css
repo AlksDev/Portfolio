@@ -1,0 +1,20 @@
+.Projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+}
+.Projects-tittle {
+    text-transform: uppercase;
+    /* Cambia el texto a mayúsculas */
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.Projects-description {
+    /* Cambia el texto a mayúsculas */
+    font-size: 20px;
+    font-weight: lighter;
+    margin-top: -20px;
+}

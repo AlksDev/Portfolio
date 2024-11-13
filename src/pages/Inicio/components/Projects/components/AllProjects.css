@@ -1,0 +1,121 @@
+/* Container for the project category filter */
+.Projects-category-filter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+}
+
+/* Container for the radio buttons */
+.Projects-category {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    height: 40px;
+    width: 600px;
+    border-radius: 20px;
+}
+
+/* Hide the radio button inputs */
+.Projects-category input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the radio button labels */
+.Projects-category label {
+    margin: 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-right: 10px;
+    cursor: pointer; /* Ensure the cursor shows a hand when hovering over the label */
+    text-align: center; /* Center the text horizontally */
+    height: 100%; /* Ensure it takes full height of the container */
+    width: 100%; /* Allow label to stretch across available space */
+}
+
+/* Add vertical line after each label except the last one */
+.Projects-category input[type="radio"]:not(:last-of-type) + label::after {
+    content: '';
+    position: absolute;
+    right: -10px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: #ccc;
+}
+
+/* Ensure the last label doesn't have a vertical line */
+.Projects-category input[type="radio"]:last-of-type + label::after {
+    content: none;
+}
+
+/* Container for the list of projects */
+.Projects-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  gap: 30px;
+
+}
+
+/* Individual project card */
+.Project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+    width: 100%; /* Ensure the project takes up full width of grid cell */
+    max-width: 200px; /* Limit the max width of the project card */
+}
+
+.Project:hover {
+    transform: translateY(-10px);
+}
+
+/* Styling for the project image */
+.Project img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Project information (title, description, link) */
+.Project h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.Project p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.Project a {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.Project a:hover {
+    text-decoration: underline;
+}
