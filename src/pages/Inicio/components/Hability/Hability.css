@@ -1,0 +1,106 @@
+.hability-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.hability-title {
+    text-transform: uppercase;
+    /* Cambia el texto a mayúsculas */
+    font-size: 40px;
+    font-weight: 900;
+}
+
+/* Estilo base para la línea */
+.line-hability {
+    width: 60%;
+    border: 1px solid;
+    margin-top: -20px;
+}
+
+/* Tema 'light' */
+.line-hability .light {
+    color: black;
+    border-color: rgb(0, 0, 0);
+}
+
+/* Tema 'dark' */
+.line-hability .dark {
+    color: white;
+    border-color: rgb(255, 255, 255);
+}
+
+/* Ajustar el ancho de las diapositivas para mostrar dos imágenes a la vez */
+.carousel .slide {
+    width: 50%;
+    /* Establecer el 50% del ancho del contenedor para cada diapositiva */
+    margin: 0;
+    position: relative;
+    text-align: center;
+    width: 100px;
+    /* Puedes ajustar este valor a 100% o un valor mayor si lo prefieres */
+}
+
+/* Estilos adicionales para las flechas de navegación */
+
+.carousel .control-prev.control-arrow {
+    left: 0px;
+}
+
+.carousel .control-next.control-arrow {
+    right: 0px;
+}
+
+/* Asegurarse de que las imágenes se ajusten bien */
+.carousel img {
+    width: 100%;
+    vertical-align: top;
+}
+
+
+/* Estilos para las flechas de navegación */
+.carousel .control-arrow {
+    background-color: #000;
+    /* Fondo oscuro para las flechas por defecto (dark theme) */
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+}
+
+
+
+
+@media only screen and (max-width: 479px) {}
+
+@media only screen and (min-width: 480px) and (max-width: 513px) {}
+
+/* Media Query para pantallas pequeñas (dispositivos entre 400px y 768px de ancho) */
+@media only screen and (min-width: 514px) and (max-width: 767px) {}
+
+/* Media Query para pantallas medianas (tablets entre 768px y 1024px de ancho) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {}
+
+/* Media Query para pantallas grandes (laptops o dispositivos entre 1025px y 1365px de ancho) */
+@media only screen and (min-width: 1025px) and (max-width: 1365px) {}
+
+/* Media Query para pantallas de 13 pulgadas (1366px de ancho, típicamente laptops de 13") */
+@media only screen and (min-width: 1366px) and (max-width: 1600px) {
+
+    /* Otros estilos específicos para pantallas de 13 pulgadas */
+}
+
+/* Media Query para pantallas Full HD (1920px de ancho, típicamente pantallas grandes o laptops de gama alta) */
+@media only screen and (min-width: 1600px) {}
+
+/* Media Query para pantallas más grandes (por ejemplo, pantallas externas, monitores grandes) */
+@media only screen and (min-width: 2560px) {
+
+
+    /* Otros estilos para pantallas más grandes */
+}

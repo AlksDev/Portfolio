@@ -62,7 +62,11 @@ function Presentation({ toggleTheme, theme, toggleLanguage, language }) {
       <div className='animation'>
         <FaUserAstronaut size={550} className='h' />
         <FaUserAstronaut size={500} className='m' />
+        <FaUserAstronaut size={450} className='g' />
         <FaUserAstronaut size={300} className='p' />
+        <FaUserAstronaut size={200} className='vp' />
+        <FaUserAstronaut size={180} className='s' />
+
 
       </div>
 

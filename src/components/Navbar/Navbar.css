@@ -77,8 +77,9 @@
     display: none; /* Ocultar la X por defecto */
 }
 
+
 /* Media Query para pantallas pequeñas (móviles pequeños, menos de 600px) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     /* Mostrar el ícono hamburguesa en pantallas pequeñas */
     .menu-button-container {
         display: block;
