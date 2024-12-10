@@ -4,7 +4,6 @@
     justify-content: space-between;
     align-items: center;
     animation: scale-up-center 0.4s;
-
 }
 
 .text {
@@ -22,7 +21,6 @@
     font-size: 40px;
     font-weight: 900;
     margin-top: -35px;
-
 }
 
 .greeting {
@@ -33,10 +31,8 @@
 .animation {
     animation: subirBajar 7s ease-in-out infinite;
     /* Animación de 2 segundos, con un ciclo infinito */
-
 }
 
-/* Dark Theme */
 .dark .Msg {
     color: #fff;
 }
@@ -49,7 +45,6 @@
     color: #fff;
 }
 
-/* Light Theme */
 .light .Msg {
     color: #333;
 }
@@ -61,7 +56,6 @@
 .light .greeting {
     color: #333;
 }
-
 
 @keyframes subirBajar {
     0% {
@@ -101,20 +95,17 @@
     }
 }
 
-
-
-/* @media only screen and (max-width: 399px) {
+/* Media Query para pantallas pequeñas (dispositivos entre 400px y 768px de ancho) */
+@media only screen and (max-width: 430px) and (min-height: 932px) {
     .presentation {
         display: flex;
         align-items: center;
         margin-left: 30px;
-
     }
 
     .text {
         display: flex;
         flex-direction: row;
-
     }
 
     .Msg {
@@ -126,7 +117,6 @@
     .About {
         font-size: 16px;
         margin-top: -15px;
-
     }
 
     .about-description {
@@ -141,37 +131,25 @@
     .animation {
         margin-top: 30px;
         font-size: 80px;
-
     }
 
-    .h {
+    .h, .m, .p, .vp, .g {
         display: none;
     }
+}
 
-    .m {
-        display: none;
-    }
-    .p{
-        display: none;
-    }
-    .vp{
-        display: none;
-    }
-} */
-@media only screen and  (max-width: 479px) {
+@media only screen and (max-width: 479px) {
     .presentation {
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
         margin-left: 30px;
-
     }
 
     .text {
         display: flex;
         flex-direction: column;
-
     }
 
     .Msg {
@@ -183,7 +161,6 @@
     .About {
         font-size: 28px;
         margin-top: -15px;
-
     }
 
     .about-description {
@@ -199,23 +176,9 @@
         margin-top: 30px;
         font-size: 80px;
         display: none;
-
     }
 
-    .h {
-        display: none;
-    }
-
-    .m {
-        display: none;
-    }
-    .p{
-        display: none;
-    }
-    .vp{
-        display: none;
-    }
-    .g{
+    .h, .m, .p, .vp, .g {
         display: none;
     }
 }
@@ -225,13 +188,11 @@
         display: flex;
         align-items: center;
         margin-left: 30px;
-
     }
 
     .text {
         display: flex;
         flex-direction: column;
-
     }
 
     .Msg {
@@ -243,7 +204,6 @@
     .About {
         font-size: 16px;
         margin-top: -15px;
-
     }
 
     .about-description {
@@ -258,52 +218,33 @@
     .animation {
         margin-top: 30px;
         font-size: 80px;
-
     }
 
-    .h {
+    .h, .m, .p, .vp, .g {
         display: none;
     }
-
-    .m {
-        display: none;
-    }
-    .p{
-        display: none;
-    }
-    .vp{
-        display: none;
-    }.g{
-    display: none;
-}
-.g{
-    display: none;
-}
 }
 
-/* Media Query para pantallas pequeñas (dispositivos entre 400px y 768px de ancho) */
 @media only screen and (min-width: 514px) and (max-width: 767px) {
     .presentation {
         display: flex;
         align-items: center;
         margin-left: 30px;
-
     }
 
     .text {
         display: flex;
         flex-direction: column;
-
     }
 
     .Msg {
-        font-size: 13px;
+        font-size: 15px;
         font-weight: 900;
         margin-bottom: -30px;
     }
 
     .About {
-        font-size: 18px;
+        font-size: 16px;
         margin-top: -15px;
     }
 
@@ -312,30 +253,15 @@
     }
 
     .greeting {
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 900;
     }
 
     .animation {
         margin-top: 30px;
         font-size: 80px;
-
     }
-
-    .h {
-        display: none;
-    }
-
-    .m {
-        display: none;
-    }
-    .p{
-        display: none;
-    }
-    .s{
-        display: none;
-    }
-    .g{
+    .h, .m, .vp, .g,.p {
         display: none;
     }
 }
@@ -346,7 +272,6 @@
         display: flex;
         align-items: center;
         margin-left: 30px;
-
     }
 
     .text {
@@ -363,7 +288,6 @@
     .About {
         font-size: 25px;
         margin-top: -30px;
-
     }
 
     .about-description {
@@ -378,25 +302,9 @@
     .animation {
         margin-top: 30px;
         font-size: 80px;
-
     }
 
-    .h {
-        display: none;
-    }
-
-    .m {
-        display: none;
-    }
-
-    .vp{
-        display: none;
-    }
-
-    .s{
-        display: none;
-    }
-    .g{
+    .h, .m, .vp, .s, .g {
         display: none;
     }
 }
@@ -408,7 +316,6 @@
         justify-content: space-between;
         align-items: center;
         animation: scale-up-center 0.4s;
-
     }
 
     .text {
@@ -425,30 +332,18 @@
     .About {
         font-size: 45px;
         margin-top: -35px;
-
     }
 
     .greeting {
         font-size: 45px;
         font-weight: 900;
     }
+
     .about-description {
         font-size: 18px;
     }
 
-    .h {
-        display: none;
-    }
-    .m {
-        display: none;
-    }
-    .p {
-        display: none;
-    }
-    .vp{
-        display: none;
-    }
-    .s{
+    .h, .m, .p, .vp, .s {
         display: none;
     }
 }
@@ -460,7 +355,6 @@
         justify-content: space-between;
         align-items: center;
         animation: scale-up-center 0.4s;
-
     }
 
     .text {
@@ -477,31 +371,20 @@
     .About {
         font-size: 45px;
         margin-top: -35px;
-
     }
 
     .greeting {
         font-size: 50px;
         font-weight: 900;
     }
+
     .about-description {
         font-size: 20px;
     }
 
-    .p {
+    .p, .m, .vp, .s, .g {
         display: none;
     }
-
-    .m {
-        display: none;
-    }
-    .vp{
-        display: none;
-    }
-    .s{
-        display: none;
-    }
-    /* Otros estilos específicos para pantallas de 13 pulgadas */
 }
 
 /* Media Query para pantallas Full HD (1920px de ancho, típicamente pantallas grandes o laptops de gama alta) */
@@ -510,7 +393,6 @@
         display: flex;
         align-items: center;
         margin-left: 30px;
-
     }
 
     .text {
@@ -529,7 +411,6 @@
         font-size: 70px;
         font-weight: 900;
         margin-top: -45px;
-
     }
 
     .about-description {
@@ -546,21 +427,7 @@
         font-size: 500px;
     }
 
-    .p {
-        display: none;
-    }
-
-    .m {
-        display: none;
-    }
-    
-    .vp {
-        display: none;
-    }
-    .s{
-        display: none;
-    }
-    .g{
+    .p, .m, .vp, .s, .g {
         display: none;
     }
 }
@@ -570,8 +437,59 @@
     body {
         padding: 5rem;
         /* Ajusta el padding para pantallas más grandes */
-
     }
 
-    /* Otros estilos para pantallas más grandes */
+    .presentation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 10%;
+        max-width: 90%;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: row;
+        margin-top: 0;
+        padding: 0 3rem;
+    }
+
+    .Msg {
+        font-size: 50px;
+        font-weight: 900;
+        margin-bottom: -50px;
+    }
+
+    .About {
+        font-size: 75px;
+        margin-top: -35px;
+    }
+
+    .about-description {
+        font-size: 30px;
+    }
+
+    .greeting {
+        font-size: 75px;
+        font-weight: 900;
+    }
+
+    .animation {
+        margin-top: 30px;
+        font-size: 600px;
+    }
+
+    .p, .m, .vp, .s, .g {
+        display: none;
+    }
+
+    /* Ajustar el contenido para que se vea bien en pantallas ultra grandes */
+    .presentation {
+        max-width: 80%; /* Limitar el ancho */
+        margin-left: 10%;
+    }
+
+    .about-description {
+        font-size: 35px;
+    }
 }

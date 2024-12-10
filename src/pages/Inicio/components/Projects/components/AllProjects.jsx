@@ -43,9 +43,14 @@ function AllProjects({ toggleLanguage, language, theme }) {
         },
     ];
 
+    // Filter Projects based on selected category
+    const filteredProjects = selectedCategory === 'all'
+        ? Projects
+        : Projects.filter((project) => project.category === selectedCategory);
+
     return (
-        <div className="Projects-category-filter">
-            <div className="Projects-category">
+        <div className={`Projects-category-filter ${theme}`}>
+            <div className={`Projects-category ${theme}`}>
                 <input
                     type="radio"
                     id="api"
@@ -55,7 +60,6 @@ function AllProjects({ toggleLanguage, language, theme }) {
                     onChange={handleCategoryChange}
                 />
                 <label htmlFor="api">API</label>
-
                 <input
                     type="radio"
                     id="software"
@@ -65,9 +69,8 @@ function AllProjects({ toggleLanguage, language, theme }) {
                     onChange={handleCategoryChange}
                 />
                 <label htmlFor="software">
-                    {language === 'es' ? 'Desarrollo Software' : 'Software '}
+                    {language === 'es' ? 'Desarrollo Software' : 'Software'}
                 </label>
-
                 <input
                     type="radio"
                     id="web"
@@ -79,46 +82,34 @@ function AllProjects({ toggleLanguage, language, theme }) {
                 <label htmlFor="web">
                     {language === 'es' ? 'Desarrollo Web' : 'Web Development'}
                 </label>
+                <input
+                    type="radio"
+                    id="all"
+                    name="category"
+                    value="all"
+                    checked={selectedCategory === 'all'}
+                    onChange={handleCategoryChange}
+                />
+                <label htmlFor="all">
+                    {language === 'es' ? 'Todos' : 'All'}
+                </label>
             </div>
-
-            {/* Display Projects Based on Selected Category */}
-            <div className="Projects-list">
-                {/* If no category is selected, show all projects */}
-                {selectedCategory === '' &&
-                    Projects.map((project) => (
-                        <div key={project.id} className="Project">
-                            <img src={project.img} alt={project.name} />
-                            <h3>{project.name}</h3>
-                            <p>{project.description}</p>
-                            <a
-                                href={project.link}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                {language === 'es' ? 'Ver proyecto' : 'View Project'}
-                            </a>
-                        </div>
-                    ))}
-
-                {/* Filtered Projects Based on Selected Category */}
-                {selectedCategory &&
-                    Projects.filter((project) => project.category === selectedCategory).map((project) => (
-                        <div key={project.id} className="Project-info">
-                            <div className="Project">
-                                <img src={project.img} alt={project.name} />
-                                <h3>{project.name}</h3>
-                                <p>{project.description}</p>
-                                <a
-                                    href={project.link}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    {language === 'es' ? 'Ver proyecto' : 'View Project'}
-                                </a>
-                            </div>
-                        </div>
-                    ))
-                }
+            {/* Display Filtered Projects */}
+            <div className={`Projects-list ${theme}`}>
+                {filteredProjects.map((project) => (
+                    <div key={project.id} className={`Project ${theme}`}>
+                        <img src={project.img} alt={project.name} />
+                        <h3>{project.name}</h3>
+                        <p>{project.description}</p>
+                        <a
+                            href={project.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            {language === 'es' ? 'Ver proyecto' : 'View Project'}
+                        </a>
+                    </div>
+                ))}
             </div>
         </div>
     );

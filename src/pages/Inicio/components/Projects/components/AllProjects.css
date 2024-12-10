@@ -15,8 +15,9 @@
     align-items: center;
     border: 2px solid;
     height: 40px;
-    width: 600px;
+    width: 800px;
     border-radius: 20px;
+    background-color: var(--background-color); /* Make sure to adjust based on theme */
 }
 
 /* Hide the radio button inputs */
@@ -41,6 +42,7 @@
     text-align: center; /* Center the text horizontally */
     height: 100%; /* Ensure it takes full height of the container */
     width: 100%; /* Allow label to stretch across available space */
+    color: var(--label-color); /* Text color for the label */
 }
 
 /* Add vertical line after each label except the last one */
@@ -64,26 +66,43 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* Change to wrap for better responsiveness */
   margin-top: 20px;
   gap: 30px;
-
 }
 
 /* Individual project card */
-.Project {
+.dark .Project {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid #ccc;
-    border-radius: 10px;
+    border: 1px solid #25252548;
+    border-radius: 10px; 
     padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(48, 48, 48, 0.5);
+    background-color: #000000;
     text-align: center;
-    transition: transform 0.2s ease-in-out;
+    transition: transform 0.3s ease-in-out;
     width: 100%; /* Ensure the project takes up full width of grid cell */
     max-width: 200px; /* Limit the max width of the project card */
+    color: white; /* Ensure the text is white in dark theme */
+}
+
+/* Individual project card */
+.light .Project  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ffffff;
+    border-radius: 10px; 
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(252, 17, 17, 0.1);
+    background-color: #fff;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    width: 100%; /* Ensure the project takes up full width of grid cell */
+    max-width: 200px; /* Limit the max width of the project card */
+    color: black; /* Ensure text is black in light theme */
 }
 
 .Project:hover {
@@ -119,3 +138,106 @@
 .Project a:hover {
     text-decoration: underline;
 }
+
+/* For a smooth transition between themes */
+body {
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Set theme colors globally */
+:root {
+    --background-color: #fff; /* Light background default */
+    --label-color: #000; /* Default text color for labels */
+}
+
+.dark {
+    --background-color: #333;
+    --label-color: #fff;
+}
+
+.light {
+    --background-color: #fff;
+    --label-color: #000;
+}
+
+
+
+@media only screen and (max-width: 399px) {
+    .Projects-category {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid;
+        height: 40px;
+        width: 350px;
+        border-radius: 20px;
+        background-color: var(--background-color); /* Make sure to adjust based on theme */
+    }
+
+    .Projects-description p{
+        /* Cambia el texto a mayúsculas */
+        font-size: 16px;
+        font-weight: lighter;
+    }
+
+ }
+    
+  
+  
+  
+  /* Media Query para pantallas pequeñas (dispositivos entre 400px y 768px de ancho) */
+  @media only screen and (min-width: 400px) and (max-width: 768px) {
+    .Projects-category {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid;
+        height: 40px;
+        width: 400px;
+        border-radius: 20px;
+        background-color: var(--background-color); /* Make sure to adjust based on theme */
+    }
+    .Projects-description p {
+     
+    }
+  }
+  
+  /* Media Query para pantallas medianas (tablets entre 768px y 1024px de ancho) */
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .Projects-category {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid;
+        height: 40px;
+        width: 600px;
+        border-radius: 20px;
+        background-color: var(--background-color); /* Make sure to adjust based on theme */
+    }
+  }
+  
+  /* Media Query para pantallas grandes (laptops o dispositivos entre 1025px y 1365px de ancho) */
+  @media only screen and (min-width: 1025px) and (max-width: 1365px) {
+  
+  }
+  
+  /* Media Query para pantallas de 13 pulgadas (1366px de ancho, típicamente laptops de 13") */
+  @media only screen and (min-width: 1366px) and (max-width: 1600px) {
+    
+  }
+  
+  /* Media Query para pantallas Full HD (1920px de ancho, típicamente pantallas grandes o laptops de gama alta) */
+  @media only screen and (min-width: 1600px) {
+    
+
+  }
+  
+  /* Media Query para pantallas más grandes (por ejemplo, pantallas externas, monitores grandes) */
+  @media only screen and (min-width: 2560px) {
+   
+    /* Otros estilos para pantallas más grandes */
+  }
+  

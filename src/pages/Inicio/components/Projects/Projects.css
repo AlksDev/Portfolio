@@ -18,3 +18,79 @@
     font-weight: lighter;
     margin-top: -20px;
 }
+
+@media only screen and (max-width: 399px) {
+    .Projects{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+    }
+    .Projects-tittle {
+        text-transform: uppercase;
+        /* Cambia el texto a mayúsculas */
+        font-size: 20px;
+        font-weight: 100;
+    }
+    
+    .Projects-description {
+        /* Cambia el texto a mayúsculas */
+        font-size: 20px;
+        font-weight: lighter;
+        margin-top: -20px;
+    }
+  
+  }
+  
+  /* Media Query para pantallas pequeñas (dispositivos entre 400px y 768px de ancho) */
+  @media only screen and (min-width: 400px) and (max-width: 768px) {
+    .Projects{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+    }
+    .Projects-tittle {
+        text-transform: uppercase;
+        /* Cambia el texto a mayúsculas */
+        font-size: 20px;
+        font-weight: 100;
+    }
+    
+    .Projects-description {
+        /* Cambia el texto a mayúsculas */
+        font-size: 20px;
+        font-weight: lighter;
+        margin-top: -20px;
+    }
+  }
+  
+  /* Media Query para pantallas medianas (tablets entre 768px y 1024px de ancho) */
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    
+  }
+  
+  /* Media Query para pantallas grandes (laptops o dispositivos entre 1025px y 1365px de ancho) */
+  @media only screen and (min-width: 1025px) and (max-width: 1365px) {
+  
+  }
+  
+  /* Media Query para pantallas de 13 pulgadas (1366px de ancho, típicamente laptops de 13") */
+  @media only screen and (min-width: 1366px) and (max-width: 1600px) {
+    
+  }
+  
+  /* Media Query para pantallas Full HD (1920px de ancho, típicamente pantallas grandes o laptops de gama alta) */
+  @media only screen and (min-width: 1600px) {
+    
+
+  }
+  
+  /* Media Query para pantallas más grandes (por ejemplo, pantallas externas, monitores grandes) */
+  @media only screen and (min-width: 2560px) {
+   
+    /* Otros estilos para pantallas más grandes */
+  }
+  
