@@ -1,0 +1,192 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin: 80px 0 80px 0;
+
+}
+.imagen-footer img {
+    height: 400px;
+    width: auto; /* Mantener la relación de aspecto */
+    filter: grayscale(100%); /* Aplica filtro blanco y negro */
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.light .form input,
+.form textarea {
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 40px;
+    width: 198px;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+.dark .form input,
+.form textarea {
+    margin-bottom: 10px;
+    border: 1px solid white;
+    border-radius: 20px;
+    height: 40px;
+    width: 198px;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 16px;
+    background-color: transparent;
+
+}
+
+/* Wider input fields for email, subject, and message */
+.content {
+    width: 420px !important;
+    /* Force width for all .content elements */
+}
+
+/* Message textarea specific styling */
+.message {
+    height: 200px !important;
+    /* Set height for message input */
+}
+
+.message::placeholder {
+    text-align: left;
+}
+
+.light .form button {
+    border-radius: 20px;
+    height: 40px;
+    width: 200px;
+    font-size: 16px;
+    cursor: pointer;
+    color: yellow;
+    height: 30px;
+    width: 100px;
+    border: none;
+    border-radius:  80px 80px ;
+    background-color: rgb(0, 0, 0);
+    transition: background-color 0.3s ease, transform 0.3s ease, opacity 0.3s ease; 
+}
+
+.dark .form button {
+    border-radius: 20px;
+    height: 40px;
+    width: 200px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    height: 30px;
+    width: 100px;
+    border: none;
+    border-radius:  80px 80px ;
+    background-color: rgb(78, 67, 67);
+    transition: background-color 0.3s ease, transform 0.3s ease, opacity 0.3s ease; 
+}
+
+.dark .form button:hover {
+    transform: scale(1.1); /* Escala el botón al 110% */
+    opacity: 0.9; /* Reduce ligeramente la opacidad para dar un toque de suavidad */
+
+
+}
+
+.light .form button:hover {
+    transform: scale(1.1); /* Escala el botón al 110% */
+    opacity: 0.9; /* Reduce ligeramente la opacidad para dar un toque de suavidad */
+
+}
+
+
+
+@media only screen and (max-width: 500px) {
+
+    .light .form input,
+.form textarea {
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 40px;
+    width: 10px;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+.dark .form input,
+.form textarea {
+    margin-bottom: 10px;
+    border: 1px solid white;
+    border-radius: 20px;
+    height: 40px;
+    width:170px;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+.content {
+    width: 370px !important;
+    /* Force width for all .content elements */
+}
+
+/* Message textarea specific styling */
+
+
+}
+@media only screen and (min-width: 1600px) {
+    .imagen-footer img {
+        height: 500px;
+        filter: grayscale(100%); /* Aplica filtro blanco y negro */
+    }
+    
+.light .form input,
+.form textarea {
+    width: 300px;
+}
+
+.dark .form input,
+.form textarea {
+    width: 300px;
+}
+
+/* Wider input fields for email, subject, and message */
+.content {
+    width: 620px !important;
+    /* Force width for all .content elements */
+}
+
+
+
+
+.light .form button {
+    height: 40px;
+    width: 200px;
+}
+
+.dark .form button {
+    height: 40px;
+    width: 200px;
+}
+
+}
+@media only screen and (min-width: 2560px) {
+    .imagen-footer img {
+        height: 800px;
+        filter: grayscale(100%); /* Aplica filtro blanco y negro */
+    }
+    
+}
