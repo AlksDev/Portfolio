@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';  // Asegúrate de importar useState
+import { Link, useNavigate } from 'react-router-dom';
 import './Navbar.css';
 import ButtonTheme from '../ButtonTheme/ButtonTheme';
 import Logo from './img/Logo.png';
@@ -9,13 +9,32 @@ import { MdClose } from "react-icons/md";
 
 import ButtonLanguage from '../ButtonLanguage/ButtonLanguage';
 import ButtonCv from '../ButtonCv/ButtonCv';
+
 const links = [
     { name: "Home", nombre: "Inicio", path: "/", href: "/" },
     { name: "About", nombre: "Sobre mi", path: "/about", href: "/about" },
-    { name: "Contact", nombre: "Contacto", path: "/contact", href: "/contact" }
+
+    { name: "Contact", nombre: "Contacto", path: "#", href: "" }  
 ];
 
 function Navbar({ toggleTheme, theme, toggleLanguage, language }) {
+    const navigate = useNavigate();
+    const [isScrolling, setIsScrolling] = useState(false); 
+
+    function scrollToBottomAndRedirect() {
+        if (!isScrolling) { 
+            setIsScrolling(true);  
+
+            setTimeout(() => {
+                window.scrollTo(0, document.body.scrollHeight); 
+            }, 500); 
+            setTimeout(() => {
+                navigate('/');  
+                setIsScrolling(false);  
+            }, 100); 
+        }
+    }
+
     return (
         <div className={`navbar-right ${theme}`}>
             {/* Logo */}
@@ -34,10 +53,9 @@ function Navbar({ toggleTheme, theme, toggleLanguage, language }) {
             <input id="menu-toggle" type="checkbox" className="menu-toggle" />
             <label htmlFor="menu-toggle" className="menu-button-container">
                 <div className="menu-button">
-                    {/* Si el checkbox está marcado, muestra la X */}
                     <span className="menu-icon">
                         <RxHamburgerMenu className="hamburger" size={30} />
-                        <MdClose  className="cancel" size={30} />
+                        <MdClose className="cancel" size={30} />
                     </span>
                 </div>
             </label>
@@ -46,23 +64,25 @@ function Navbar({ toggleTheme, theme, toggleLanguage, language }) {
             <div className={`navbar-links ${theme}`}>
                 {language === 'es' ? (
                     links.map((link) => (
-                        <Link
-                            to={link.path}
+                        <a
+                            href={link.href}
                             key={link.name}
                             className={`navbar-right-items ${theme}`}
+                            onClick={link.name === "Contact" ? (e) => { e.preventDefault(); scrollToBottomAndRedirect(); } : undefined}
                         >
                             {link.nombre}
-                        </Link>
+                        </a>
                     ))
                 ) : (
                     links.map((link) => (
-                        <Link
-                            to={link.path}
+                        <a
+                            href={link.href}
                             key={link.name}
                             className={`navbar-right-items ${theme}`}
+                            onClick={link.name === "Contact" ? (e) => { e.preventDefault(); scrollToBottomAndRedirect(); } : undefined}
                         >
                             {link.name}
-                        </Link>
+                        </a>
                     ))
                 )}
 

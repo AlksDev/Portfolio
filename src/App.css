@@ -1,4 +1,8 @@
 /* Tema claro */
+
+html {
+  scroll-behavior: smooth;
+}
 .light {
   background-color: transparent;
   color: #000000;

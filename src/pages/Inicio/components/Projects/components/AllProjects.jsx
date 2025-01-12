@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './AllProjects.css';
 
 function AllProjects({ toggleLanguage, language, theme }) {
-    const [selectedCategory, setSelectedCategory] = useState('');
+    const [selectedCategory, setSelectedCategory] = useState('all');
 
     const handleCategoryChange = (e) => {
         setSelectedCategory(e.target.value);

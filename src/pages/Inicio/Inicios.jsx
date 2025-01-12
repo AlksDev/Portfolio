@@ -10,7 +10,7 @@ function Inicios({ toggleTheme, theme, toggleLanguage, language }) {
       <Presentation toggleLanguage={toggleLanguage} language={language} theme={theme} ></Presentation>
       <Hability toggleLanguage={toggleLanguage} language={language} theme={theme} ></Hability>
       <Projects toggleLanguage={toggleLanguage} language={language} theme={theme} ></Projects>
-      <Footer toggleLanguage={toggleLanguage} language={language} theme={theme} ></Footer>
+      <Footer toggleLanguage={toggleLanguage} language={language} theme={theme} id = 'contact'></Footer>
     </div>
   );
 }

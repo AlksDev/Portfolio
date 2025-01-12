@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Inicios from './pages/Inicio/Inicios';
+import SobreMi from './pages/SobreMi/SobreMi';
 import Contacto from './pages/Contacto/Contacto';
 import Navbar from './components/Navbar/Navbar';
 import ParticlesBg from './components/Particles/ParticlesBg';
-import './App.css'; // Importing CSS for themes
-import MenuHamburger from './components/MenuHamburger/MenuHamburger';
+import './App.css'; 
 
 function App() {
   const [theme, setTheme] = useState('light'); // State for theme
@@ -41,7 +41,7 @@ function App() {
             path="/"
             element={<Inicios toggleTheme={toggleTheme} theme={theme} toggleLanguage={toggleLanguage} language={language} />}
           />
-          <Route path="/about" element={<h1>Sobre mi</h1>} />
+          <Route path="/about" element={<SobreMi toggleTheme={toggleTheme} theme={theme} toggleLanguage={toggleLanguage} language={language} />} />
           <Route path="/contact" element={<Contacto />} />
         </Routes>
       </Router>

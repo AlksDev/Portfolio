@@ -1,0 +1,29 @@
+.about-me {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; /* Make sure it takes up the full width */
+}
+
+.text-about-me {
+    flex: 1; /* Allow text container to take equal width */
+}
+.text-about-me p,
+.text-about-me h5 {
+    font-size: 16px; /* Ajusta el tamaño de fuente según lo que necesites */
+    line-height: 1.6; /* Opcional, para dar un mejor espaciado */
+    color: #333; /* Asegúrate de que el color sea el mismo */
+}
+.photo-aboutme {
+    flex: 1; /* Allow photo container to take equal width */
+    display: flex;
+    justify-content: center; /* Centers the image */
+}
+
+.photo-aboutme img {
+    height: 500px; /* Set to take up available height */
+    width: auto;
+    max-width: 100%; /* Make sure the image does not exceed the container's width */
+}

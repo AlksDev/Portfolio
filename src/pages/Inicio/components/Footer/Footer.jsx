@@ -3,14 +3,14 @@ import './Footer.css'
 import imagen from './img/footer.svg'
 function Footer({ toggleLanguage, language, theme }) {
     return (
-        <div className={`footer ${theme}`}>
-            <div className='imagen-footer'>
+        <div className={`footer ${theme}`} id="contact"> {/* Asegúrate de que este div tenga el id 'contact' */}
+            <div className="imagen-footer">
                 <img src={imagen} alt="" />
             </div>
             <div>
                 <form action="POST" className={`form ${theme}`}>
                     <div>
-                        <input type="text" placeholder={language === 'es' ? 'Nombre' : ' First Name'} />
+                        <input type="text" placeholder={language === 'es' ? 'Nombre' : 'First Name'} />
                         <input type="text" placeholder={language === 'es' ? 'Apellido' : 'Last Name'} />
                     </div>
                     <input className={`content email ${theme}`} type="email" placeholder={language === 'es' ? 'Correo Electronico' : 'Email'} />
@@ -22,5 +22,7 @@ function Footer({ toggleLanguage, language, theme }) {
         </div>
     )
 }
+
+
 
 export default Footer
