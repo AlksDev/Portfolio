@@ -40,7 +40,7 @@
 .dark .form input,
 .form textarea {
     margin-bottom: 10px;
-    border: 1px solid white;
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 20px;
     height: 40px;
     width: 198px;
@@ -54,6 +54,7 @@
 /* Wider input fields for email, subject, and message */
 .content {
     width: 420px !important;
+
     /* Force width for all .content elements */
 }
 
@@ -65,6 +66,7 @@
 
 .message::placeholder {
     text-align: left;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
 .light .form button {

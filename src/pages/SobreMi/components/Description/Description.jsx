@@ -28,9 +28,9 @@ function Description({ toggleLanguage, language, theme }) {
     return (
         <div>
             <div className="about-me">
-                <div className="text-about-me">
+                <div className={`text-about-me ${theme}`}>
                     {language === 'es' ? (
-                        <>
+                        <div className='text-about-me'>
                             <p>
                                 Hola, mi nombre es Kevin Urrutia. Actualmente vivo en Medellín, Colombia, tengo 27 años y soy ingeniero de sistemas. <br /> Me apasiona la programación, el desarrollo web y de software. He tenido la oportunidad de adquirir experiencia trabajando en diversos proyectos, lo que me ha permitido desarrollar habilidades tanto en el desarrollo front-end como back-end. <br /> Me gradué de la Fundación Universitaria Claretiana y, en mi constante búsqueda de superación, continúo ampliando mis conocimientos a través de estudios y proyectos personales.
                             </p>
@@ -38,10 +38,10 @@ function Description({ toggleLanguage, language, theme }) {
                                 Si estás buscando un desarrollador comprometido y con experiencia, no dudes en contactarme.
                             </h5>
                             {/* Botón que ejecuta la función scrollToBottom con delay */}
-                            <button className="contact-button" onClick={scrollToBottom}>
-                                Ir al final
+                            <button className={`button-contact ${theme}`} onClick={scrollToBottom}>
+                              Contactame
                             </button>
-                        </>
+                        </div>
                     ) : (
                         <>
                             <p>
@@ -51,7 +51,7 @@ function Description({ toggleLanguage, language, theme }) {
                                 If you're looking for a committed and experienced developer, feel free to contact me.
                             </h5>
                             {/* Botón que ejecuta la función scrollToBottom con delay */}
-                            <button className="contact-button" onClick={scrollToBottom}>
+                            <button className={`button-contact ${theme}` } onClick={scrollToBottom}>
                                 Go to the bottom
                             </button>
                         </>

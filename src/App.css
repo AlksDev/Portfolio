@@ -1,8 +1,5 @@
 /* Tema claro */
 
-html {
-  scroll-behavior: smooth;
-}
 .light {
   background-color: transparent;
   color: #000000;
@@ -20,6 +17,8 @@ body {
   padding: 0; /* Asegura que no haya padding predeterminado */
   background-color: transparent; /* Fondo transparente por defecto */
   color: inherit; /* El color del texto depende del tema */
+  scroll-behavior: smooth;
+
 }
 
 /* Media Query para pantallas extra pequeñas (móviles pequeños, menos de 400px) */

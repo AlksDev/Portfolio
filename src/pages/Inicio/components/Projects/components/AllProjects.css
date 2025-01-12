@@ -131,8 +131,7 @@
 .Project a {
     margin-top: 10px;
     font-size: 1rem;
-    color: #007BFF;
-    text-decoration: none;
+    color: #000000;
 }
 
 .Project a:hover {
