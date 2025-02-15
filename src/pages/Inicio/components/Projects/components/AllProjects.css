@@ -117,6 +117,7 @@
     border-radius: 10px;
 }
 
+
 /* Project information (title, description, link) */
 .Project h3 {
     margin: 10px 0;
@@ -131,7 +132,6 @@
 .Project a {
     margin-top: 10px;
     font-size: 1rem;
-    color: #000000;
 }
 
 .Project a:hover {

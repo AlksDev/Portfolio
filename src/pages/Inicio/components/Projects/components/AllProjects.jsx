@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './AllProjects.css';
 import Portafolio from './imagenPortafolio.jpg';
 import Itr from './itr.png';
+import Peya from './peya.png';
 
 function AllProjects({ toggleLanguage, language, theme }) {
     const [selectedCategory, setSelectedCategory] = useState('all');
@@ -15,19 +16,19 @@ function AllProjects({ toggleLanguage, language, theme }) {
             id: 1,
             name: 'API',
             category: 'api',  
-            link: 'https://github.com/KevinDev-Dev/API',
-            img: 'https://i.ibb.co/6wL6V9Y/Api.png',
-            description: 'API',
-            descripcion: 'API',
+            link: '',
+            img: Peya,
+            description: 'API developed for the backend of the company PedidosYa',
+            descripcion: 'API desarrollada para el backend de la empresa PedidosYa',
         },
         {
             id: 2,
             name: 'Desarrollo Software',
             category: 'software',
-            link: 'https://github.com/KevinDev-Dev/API',
-            img: 'https://i.ibb.co/6wL6V9Y/Api.png',
-            description: 'Software Development',
-            descripcion: 'Desarrollo Software',
+            link: '',
+            img: Peya,
+            description: 'Program developed for the company PedidosYa',
+            descripcion: 'Programa desarrollado para la empresa PedidosYa',
         },
         {
             id: 3,
@@ -110,6 +111,7 @@ function AllProjects({ toggleLanguage, language, theme }) {
                         <h3>{project.name}</h3>
                         <p>{language === 'es' ? project.descripcion : project.description}</p>
                         <a
+                            className={`Project-link ${theme}`}
                             href={project.link}
                             target="_blank"
                             rel="noopener noreferrer"
