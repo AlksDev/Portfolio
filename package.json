@@ -18,7 +18,7 @@
     "react-router-dom": "^6.27.0",
     "@tsparticles/react": "^3.0.0",  
     "react-typed": "^2.0.12",
-    "tsparticles": "^3.8.1"  
+    "tsparticles": "^3.8.1"  // Correcta para la biblioteca principal de partículas
   },
   "devDependencies": {
     "@eslint/js": "^9.13.0",
